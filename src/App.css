@@ -1,39 +1,334 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --colour-FF8F00: #ff8f00;
+  --colour-3b4149: #3b4149;
+  --colour-febd69: #febd69;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
+body {
+  font-family: "Rubik", sans-serif;
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border-color: inherit;
+}
+
+.gap-10 {
+  gap: 10px;
+}
+.gap-15 {
+  gap: 15px;
+}
+.gap-75 {
+  gap: 75px;
+}
+.gap-30 {
+  gap: 30px;
+}
+
+/* Header part */
+
+.header-top-strip {
+  border-bottom: 1px solid var(--colour-FF8F00);
+  background-color: var(--colour-FF8F00);
+}
+
+.header-upper {
+  background-color: var(--colour-FF8F00);
+}
+
+.header-upper .header-upper-links img {
+  width: 35px;
+  height: 35px;
+}
+
+.header-upper-links {
+  margin-right: 9rem;
+}
+.header-botton {
+  background-color: var(--colour-FF8F00);
+  color: black;
+}
+
+.header-botton .dropdown-button:focus {
+  box-shadow: none;
+}
+
+.navlink {
+  margin-right: 1rem;
+}
+
+.header-botton .dropdown-menu {
+  transform: translate3d(0px, 57px, 0px) !important;
+  background-color: aliceblue;
+}
+
+.header-botton .dropdown-item {
+  padding: 7px;
+  margin-bottom: 3px;
+  /* border-bottom: 1px solid var(--colour-febd69); */
+}
+
+/* Header part ends here */
+
+/* Footer section */
+
+#footer {
+  background-color: var(--colour-FF8F00);
+  color: #0f0e0e;
+}
+
+.footer-title {
+  font-family: "Rubik", sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: rgb(17, 17, 17);
+  margin-top: -1rem;
+}
+
+.nav-text {
+  color: #131313 !important;
+  font-weight: 200;
+}
+
+.footer-email {
+  margin-top: 5rem;
+  color: #131212;
+}
+
+.mb-3 {
+  margin-bottom: 3rem !important;
+  color: #080808;
+}
+
+.contact-number {
+  font-weight: 800;
+}
+
+.contact-info {
+  color: #0e0d0d;
+}
+
+.nav-link {
+  color: #0f0e0e;
+}
+
+.newsletter {
+  color: #0f0e0e;
+}
+.newsletter-form {
+  padding: 0;
+}
+
+.contact-email {
+  color: #161616;
+}
+
+.copyright {
+  color: #0f0f0f;
+}
+
+.footer-button {
+  background-color: #54350d;
+  border-color: #54350d;
+}
+.footer-button:hover {
+  background-color: #603a09;
+  border-color: #523107;
+}
+
+/* Footer part ends here  */
+
+/* Image slider  */
+.s-image {
+  padding: 5px;
+  width: 1000px;
+  height: 570px;
+  margin-right: -2.3rem;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+  margin-bottom: 0rem;
+}
+
+.title {
+  font-size: 60px;
+}
+
+.discription {
+  font-size: 40px;
+  line-height: 45px;
+}
+
+.d-info {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.background {
+  background-color: #efefef;
+}
+
+.carousel-inner {
+  background-color: #efefef;
+}
+
+.carousel-item {
+  margin-left: -6rem;
+}
+
+.bg-success {
+  --bs-bg-opacity: 1;
+  background-color: var(--colour-FF8F00) !important;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 100% 100%;
+  opacity: 10%;
+}
+
+.clothing-tags {
+  height: 200px;
+  width: 200px;
+}
+.clothing_models {
+  padding-bottom: 6rem;
+}
+
+.clothing-category {
+  margin-bottom: 5rem;
+  margin-left: 4rem;
+  margin-top: 4rem;
+}
+
+.category-name {
+  margin-left: 2rem;
+}
+.category-name_kids {
+  margin-left: 4rem;
+}
+
+@media (max-width: 430px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow-x: hidden; */
   }
-}
 
-.App-header {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-}
-
-.App-link {
-  color: rgb(112, 76, 182);
-}
-
-@keyframes App-logo-float {
-  0% {
-    transform: translateY(0);
+  body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
   }
-  50% {
-    transform: translateY(10px);
+
+  .section-1 {
+    display: none;
+    /* overflow-x: hidden; */
   }
-  100% {
-    transform: translateY(0px);
+
+  .clothing-tags {
+    height: 70px;
+    width: 70px;
+  }
+
+  /* .clothing-category {
+    /* margin-bottom: 5rem; */
+  /* margin-left: 3rem; */
+  /* }  */
+
+  .category-name_kids {
+    margin-left: 1.5rem;
+  }
+
+  /* .clothing_models {
+    padding-bottom: 2rem;
+  } */
+
+  #category {
+    width: 420px !important;
+  }
+
+  .nav-element {
+    width: 420px !important;
+  }
+
+  /* .header-upper {
+    /* display: none; */
+  /* }  */
+  .header-botton {
+    display: none;
+  }
+
+  #footer {
+    width: 425px;
+  }
+
+  .pointer {
+    display: flex !important;
+  }
+
+  .header-upper .header-upper-links img {
+    width: 20px;
+    height: 20px;
+    margin-left: 2rem;
+  }
+
+  .user-id {
+    display: none;
+  }
+
+  .input-group {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 222%;
+    margin-top: 6rem;
+    margin-left: -3rem;
+  }
+
+  .gap-10 {
+    gap: 10px;
+    padding-left: 0.6rem;
+    margin-left: -1.5rem;
+  }
+
+  .brand-title {
+    margin-left: 2rem;
+    font-weight: 700;
+    font-size: 2rem;
+  }
+
+  .s-image {
+    padding: 5px;
+    width: 516px;
+    height: 501px;
+    margin-right: -2.3rem;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    margin-bottom: 0rem;
   }
 }
